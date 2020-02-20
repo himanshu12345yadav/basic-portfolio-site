@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --version: 3.2;
+}
+table,td,tr,th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    /* width: 33%; */
+    height: 85px;
+    text-align: center;
+}
+th{
+    width: 5%;
+}
+table{
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: 50px auto;
+    margin-bottom: 0px;
+}
+th{
+    background-color: yellowgreen;
+}
+tr:nth-child(even){
+    background-color: greenyellow;
+}

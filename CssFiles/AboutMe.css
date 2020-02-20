@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: linear-gradient(to left, #afbfe4 ,#e4efe9);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.AboutMe{
+    display: block;
+    margin: 100px 0px;
+    text-transform: capitalize;
+}
+.AboutMe table{
+    margin: auto;
+    width: 90%;
+    border: 0px;
+}
+.AboutMe table,td,th,caption{
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: 18px;
+    text-align: center;
+    height: 77px;
+}
+.AboutMe tr:nth-child(even){
+    background-color: mediumturquoise;
+}
+.AboutMe th{
+    background-color: lightseagreen;
+}
+.AboutMe caption{
+    background-color: cyan;
+    border-bottom: 0;
+    text-transform: capitalize;
+}
