@@ -19,7 +19,6 @@ body{
     margin-top: 15px;
     justify-content: space-around ;
     align-items: center;
-    border: 2px solid black;
     flex-wrap: row;
 }
 .navitems{
