@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: helvetica;
+    font-family: Roboto slab;
 }
 html{
     scroll-behavior : smooth;
@@ -17,19 +17,20 @@ body{
 .navbar{
     display: flex;
     margin-top: 15px;
-    justify-content: center;
+    justify-content: space-around ;
     align-items: center;
+    border: 2px solid black;
+    flex-wrap: row;
 }
 .navitems{
     display: flex;
     flex-direction: column;
-    width:14rem;
     height: 3rem;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     color: black;
-    font-size: 18px;
+    font-size:16px;
     justify-content: space-evenly;
 }
 .navitems:hover{
@@ -37,25 +38,43 @@ body{
     cursor: pointer;
 }
 .navitems:after{
-    content: '';
+    content: "";
     transition: width .3s ease-in-out, visibility .3s ease-in-out;
     width: 0px;
-    border: 2px solid whitesmoke;
-    border-radius: 2px;
+    border: 1.5px solid whitesmoke;
+    border-radius: 1.3px;
     position: relative;
     visibility: hidden;
-    
 }
 .navitems:hover:after{
-    width: 70%;
+    width: 100%;
     visibility: visible;
 }
 iframe{
     background-color: whitesmoke;
     display: block;
-    margin:40px auto;
-    width: 95%;
+    margin: 50px auto;
+    width: 95vw;
     height: 750px;
     border: 2px solid black;
     border-radius: 20px;
 } 
+@media (max-width: 800px){
+    .navitems{
+        font-size: 14px;
+    }
+}
+@media (max-width: 600px){
+.navitems{
+    font-size: 12px;
+}
+}
+@media (max-width:550px){
+    .navbar{
+        flex-direction: column;
+    }
+    .navitems{
+        height: 40px;
+        font-size: 16px;
+    }
+}

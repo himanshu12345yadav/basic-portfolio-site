@@ -2,7 +2,7 @@
     margin:0px;
     padding:0px;
     box-sizing:border-box;
-    font-family:helvetica;
+    font-family:Roboto slab;
     text-transform: capitalize;
     font-weight: normal;
     color: black;
@@ -20,25 +20,25 @@ body{
     width: 100%;
 }
 #spacing::before{
-    content: '';
+    content: "";
     width: 0%;
-    border: 1px solid whitesmoke;
+    border-top: 2.3px solid whitesmoke;
     /* margin:auto; */
     border-radius: 20px;
     position: absolute;
     margin-bottom: 50px;
-    right:50px;
+    right:0px;
     animation: effects 4s ease-in-out infinite;
 }
 #spacing::after{
     animation: effects 4s ease-in-out infinite;
-    content: '';
+    content: "";
     width: 0%;
-    border: 1px solid whitesmoke;
+    border-top: 2.3px solid whitesmoke;
     /* margin:auto; */
     border-radius: 20px;
     position: relative;
-    left:50px;
+    left:0px;
 }
 @keyframes effects{
     from{
@@ -48,7 +48,7 @@ body{
     }
     50%{
         /* letter-spacing: 5px; */
-        width: 90%;
+        width: 100%;
         /* transform: rotate(3deg); */
     }
     to{
