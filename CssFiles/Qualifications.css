@@ -27,7 +27,7 @@ body{
     border-radius: 20px;
     position: absolute;
     margin-bottom: 50px;
-    right:0;
+    right:50px;
     animation: effects 4s ease-in-out infinite;
 }
 #spacing::after{
@@ -38,7 +38,7 @@ body{
     /* margin:auto; */
     border-radius: 20px;
     position: relative;
-    left:0;
+    left:50px;
 }
 @keyframes effects{
     from{
@@ -48,7 +48,7 @@ body{
     }
     50%{
         /* letter-spacing: 5px; */
-        width: 100%;
+        width: 90%;
         /* transform: rotate(3deg); */
     }
     to{
