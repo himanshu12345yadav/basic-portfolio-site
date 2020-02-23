@@ -1,6 +1,6 @@
 # Basic-Portfolio-Site
 
-## This is a basic portfolio site made with HTML and CSS HTML _website_ made with crisper _effects_ and _awesome design_
+## This is a _basic portfolio site_ made in HTML and CSS  with crisper _effects_ and _awesome design_
 
 > ## Want to check how does the site look like [Click Me](https://himanshu12345yadav.github.io/basic-portfolio-site/Home.html)
 
