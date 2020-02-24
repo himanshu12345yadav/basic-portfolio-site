@@ -17,9 +17,9 @@ body{
     flex-direction: column;
     /* animation: spacing 2s linear .2s infinite; */
     margin: auto;
-    width: 100%;
+    line-height: 60px;
 }
-#spacing::before{
+#spacing::before{ 
     content: "";
     width: 0%;
     border-top: 2.3px solid whitesmoke;
@@ -84,4 +84,39 @@ body{
     background-color: cyan;
     border-bottom: 0;
     text-transform: capitalize;
+}
+@media (max-width: 880px){
+    .heading{
+        font-size: 25px;
+    }
+    #spacing{
+        font-size: 20px;
+    }
+    .projects table,td,th,caption{
+        font-size: 14px;
+    }
+}
+@media (max-width: 580px){
+    .heading{
+        font-size: 18px;
+    }
+    #spacing{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .projects table,td,th,caption{
+        font-size: 12px;
+    }
+}
+@media (max-width: 400px){
+    .heading{
+        font-size: 15px;
+    }
+    #spacing{
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .projects table,td,th,caption{
+        font-size: 10px;
+    }
 }

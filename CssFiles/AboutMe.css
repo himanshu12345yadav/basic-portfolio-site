@@ -20,12 +20,15 @@ body{
     width: 90%;
     border: 0px;
 }
+.AboutMe table td{
+width: 300px;
+}
 .AboutMe table,td,th,caption{
     border: 2px solid black;
     border-collapse: collapse;
     font-size: 18px;
     text-align: center;
-    height: 77px;
+    height: 65px;
 }
 .AboutMe tr:nth-child(even){
     background-color: mediumturquoise;
@@ -37,4 +40,10 @@ body{
     background-color: cyan;
     border-bottom: 0;
     text-transform: capitalize;
+}
+@media (max-width: 900px){
+    .AboutMe table td{
+        height: 60px;
+        font-size: 20px;
+    }
 }
