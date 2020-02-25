@@ -12,7 +12,7 @@ body{
 }
 .AboutMe{
     display: block;
-    margin: 100px 0px;
+    margin: 30px auto;
     text-transform: capitalize;
 }
 .AboutMe table{
@@ -20,8 +20,11 @@ body{
     width: 90%;
     border: 0px;
 }
+.AboutMe table{
+    transform: translateY(-40px);
+}
 .AboutMe table td{
-width: 300px;
+    width: 300px;
 }
 .AboutMe table,td,th,caption{
     border: 2px solid black;
@@ -41,9 +44,33 @@ width: 300px;
     border-bottom: 0;
     text-transform: capitalize;
 }
+.image{
+    border: 2px solid black;
+    border-radius: 50%;
+    display: block;
+    width: 350px;
+    margin: auto;
+    overflow: hidden;
+    z-index: 1;
+}
+#image{
+    border-radius: 50%;
+    width: 350px;
+    transition: transform .4s ease-in-out;
+}
+#image:hover{
+    transform: scale(1.2);
+}
 @media (max-width: 900px){
-    .AboutMe table td{
-        height: 60px;
-        font-size: 20px;
-    }
+.AboutMe table td{
+    height: 60px;
+    font-size: 20px;
+}
+.image{
+    width: 300px;
+}
+#image{
+    width: 300px;
+}
+
 }
