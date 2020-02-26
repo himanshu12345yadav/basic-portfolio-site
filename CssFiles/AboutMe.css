@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: Roboto Slab;
+    font-weight: normal;
 }
 body{
     /* background: linear-gradient(to left, #afbfe4 ,#e4efe9); */
