@@ -31,7 +31,7 @@ body{
     border-collapse: collapse;
     font-size: 18px;
     text-align: center;
-    height: 65px;
+    height: 100px;
 }
 .AboutMe tr:nth-child(even){
     background-color: mediumturquoise;
