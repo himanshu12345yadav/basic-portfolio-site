@@ -5,7 +5,8 @@
     font-family: Roboto Slab;
 }
 body{
-    background: linear-gradient(to left, #afbfe4 ,#e4efe9);
+    /* background: linear-gradient(to left, #afbfe4 ,#e4efe9); */
+    background: linear-gradient(to bottom,#a1c4fd,#c2e9fb);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
