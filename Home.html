@@ -14,7 +14,10 @@
 
 <body>
     <div class="navbar">
-
+        <div class="header">
+            <img src="Images/htmlicons.png" alt="html icons" height="30">
+            <button onclick="toggle(self)"><i class="fa fa-bars" id="bar"></i></button>
+        </div>
         <ul><a href="https://www.wikipedia.com/wiki/www" class="navitems" target="iframe-box"> <i class="fa fa-home"
                     style="color:#f8f9fa;font-size: 30px;"></i>HOME</a></ul>
 
@@ -36,5 +39,34 @@
     </div>
     <iframe src="https://www.wikipedia.com/wiki/www" frameborder="0" class="iframe-box" name="iframe-box"></iframe>
 </body>
+<script>
+    window.addEventListener('load', () => {
+        console.clear();
+    });
+
+    toggle= (a) => {
+        document.getElementById('bar').classList.remove('fa-bars')
+        document.getElementById('bar').classList.toggle('fa-times')
+        var node = document.querySelectorAll('.navitems');
+        if (node[1].style.display === 'none') {
+            for (i = 0; i < node.length; i++) {
+                node[i].style.display = 'flex';
+            }
+        }
+        else {
+            document.getElementById('bar').classList.remove('fa-times')
+            document.getElementById('bar').classList.toggle('fa-bars')
+            for (i = 0; i < node.length; i++) {
+                node[i].style.display = 'none';
+            }
+        }
+    }
+    window.addEventListener('resize',() =>{
+        var node = document.querySelectorAll('.navitems');
+        for (i = 0; i < node.length; i++) {
+                node[i].style.display = 'flex';
+            }
+    });
+</script>
 
 </html>

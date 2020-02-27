@@ -12,7 +12,7 @@ html{
 }
 .arrow-up i{
     position: fixed;
-    top:90vh;
+    top:80vh;
     left:95vw;
     font-size: 40px;
     background-color: transparent;
