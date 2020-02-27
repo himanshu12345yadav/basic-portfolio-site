@@ -10,6 +10,15 @@ html{
     background-repeat: none;
     background-attachment: fixed;
 }
+.arrow-up i{
+    position: fixed;
+    top:90vh;
+    left:95vw;
+    font-size: 40px;
+    background-color: transparent;
+    color: #3b444b;
+    cursor: pointer;
+}
 .contents{
     display: flex;
     justify-content: center;
@@ -93,7 +102,10 @@ li:hover:after{
     .htmlTags table,td,th,caption{
         font-size: 15px;
     }
-
+    .arrow-up i{
+        font-size:30px;
+        left:95vw;
+    }
 }
 @media (max-width: 680px){
     .mainHeading{
@@ -109,6 +121,10 @@ li:hover:after{
     .htmlTags table,td,th,caption{
         font-size: 13px;
     }
+    .arrow-up i{
+        font-size:25px;
+        left:95vw;
+    }
 }
 @media (max-width: 590px){
     .htmlTags table{
@@ -122,5 +138,9 @@ li:hover:after{
     }
     .contents ul li{
         font-size: 16px;
+    }
+    .arrow-up i{
+        font-size:20px;
+        left:95vw;
     }
 }
