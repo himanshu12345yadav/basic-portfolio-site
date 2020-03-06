@@ -18,24 +18,25 @@
             <img src="Images/htmlicons.png" alt="html icons" height="30">
             <button onclick="toggle(self)"><i class="fa fa-bars" id="bar"></i></button>
         </div>
-        <ul><a href="https://www.wikipedia.com/wiki/www" class="navitems" target="iframe-box"> <i class="fa fa-home"
-                    style="color:#f8f9fa;font-size: 30px;"></i>HOME</a></ul>
-
+        <ul><a href="https://www.wikipedia.com/wiki/www" class="navitems" target="iframe-box"
+                onclick="currentLink(this)"> <i class="fa fa-home"></i>HOME</a></ul>
         <ul><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d889.7244322777816!2d75.78943382919334!3d26.874990195205292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDUyJzMwLjAiTiA3NcKwNDcnMjMuOSJF!5e0!3m2!1sen!2sin!4v1581791040747!5m2!1sen!2sin"
-                class="navitems" target="iframe-box"><i class="fa fa-map-marker"
-                    style="color:#f8f9fa; font-size:30px;"></i>LOCATION</a></ul>
+                class="navitems" target="iframe-box" onclick="currentLink(this)"><i
+                    class="fa fa-map-marker"></i>LOCATION</a></ul>
 
-        <ul><a href="HtmlFiles/Qualifications.html" class="navitems" target="iframe-box"><i class="fa fa-tasks"
-                    style="color:#f8f9fa;font-size:30px;"></i>QUALIFICATION</a></ul>
+        <ul><a href="HtmlFiles/Qualifications.html" class="navitems" target="iframe-box" onclick="currentLink(this)"><i
+                    class="fa fa-tasks"></i>QUALIFICATION</a></ul>
 
-        <ul><a href="HtmlFiles/subjects.html" class="navitems" target="iframe-box"><i class="fa fa-book"
-                    style="color:#f8f9fa;font-size:30px;"></i>SUBJECTS</a></ul>
+        <ul><a href="HtmlFiles/subjects.html" class="navitems" target="iframe-box" onclick="currentLink(this)"><i
+                    class="fa fa-book"></i>SUBJECTS</a></ul>
 
-        <ul><a href="HtmlFiles/AboutHtml.html" class="navitems" target="iframe-box"><i class="fa fa-html5"
-                    style="color:#f8f9fa;font-size:30px;"></i>ABOUT HTML</a></ul>
+        <ul><a href="HtmlFiles/AboutHtml.html" class="navitems" target="iframe-box" onclick="currentLink(this)"><i
+                    class="fa fa-html5"></i>ABOUT
+                HTML</a></ul>
 
-        <ul><a href="HtmlFiles/AboutMe.html" class="navitems" target="iframe-box"><i class="fa fa-user"
-                    style="color:#f8f9fa;font-size:30px;"></i>ABOUT ME</a></ul>
+        <ul><a href="HtmlFiles/AboutMe.html" class="navitems" target="iframe-box" onclick="currentLink(this)"><i
+                    class="fa fa-user"></i>ABOUT ME</a>
+        </ul>
     </div>
     <iframe src="https://www.wikipedia.com/wiki/www" frameborder="0" class="iframe-box" name="iframe-box"></iframe>
 </body>
@@ -44,7 +45,7 @@
         console.clear();
     });
 
-    toggle= (a) => {
+    toggle = (a) => {
         document.getElementById('bar').classList.remove('fa-bars')
         document.getElementById('bar').classList.toggle('fa-times')
         var node = document.querySelectorAll('.navitems');
@@ -61,12 +62,19 @@
             }
         }
     }
-    window.addEventListener('resize',() =>{
+    window.addEventListener('resize', () => {
         var node = document.querySelectorAll('.navitems');
         for (i = 0; i < node.length; i++) {
-                node[i].style.display = 'flex';
-            }
+            node[i].style.display = 'flex';
+        }
     });
+    currentLink = (obj) => {
+        var elements = document.getElementsByClassName('navitems');
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].classList.remove('activeLink');
+        }
+        obj.classList.add('activeLink');
+    }
 </script>
 
 </html>

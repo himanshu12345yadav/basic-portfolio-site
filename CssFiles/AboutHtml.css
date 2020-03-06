@@ -9,13 +9,14 @@ html{
     background-image: radial-gradient(ellipse at left, rgba(38, 215, 221, 0.637),rgba(86, 64, 187, 0.24));
     background-repeat: none;
     background-attachment: fixed;
-}
+} 
 .arrow-up i{
     position: fixed;
     top:80vh;
     left:95vw;
     font-size: 40px;
     background-color: transparent;
+    opacity: .5;
     color: #3b444b;
     cursor: pointer;
 }
@@ -103,7 +104,6 @@ li:hover:after{
         font-size: 15px;
     }
     .arrow-up i{
-        font-size:30px;
         left:95vw;
     }
 }
@@ -122,8 +122,8 @@ li:hover:after{
         font-size: 13px;
     }
     .arrow-up i{
-        font-size:25px;
-        left:95vw;
+        font-size:35px;
+        left:90vw;
     }
 }
 @media (max-width: 590px){
@@ -140,7 +140,6 @@ li:hover:after{
         font-size: 16px;
     }
     .arrow-up i{
-        font-size:20px;
-        left:95vw;
+        left:90vw;
     }
 }

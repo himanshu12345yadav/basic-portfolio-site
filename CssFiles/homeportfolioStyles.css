@@ -43,13 +43,20 @@ body{
     align-items: center;
     text-decoration: none;
     background-color: transparent;
-    color:#e7f5ff;
+    color: rgb(192, 222, 229);
     font-size:16px;
     justify-content: space-evenly;
     /* transition: display .5s ease-in-out; */
 }
+.navbar ul i{
+    font-size: 30px;
+}
 .navitems:hover{
-    color:#c1cdd4;
+    color: #DEE4E7;
+    cursor: pointer;
+}
+.activeLink{
+    color: #fff;
     cursor: pointer;
 }
 .navitems:after{
