@@ -8,12 +8,87 @@ html{
     scroll-behavior : smooth;
 }
 body{
-    /* background-image:linear-gradient(to bottom,#b3cde0, #6497b1); */
-    /* background-image: radial-gradient(ellipse at center, #b3cde0,#6497b1); */
     background-image: radial-gradient(ellipse at center,#155592, #1c7ed6);
     background-repeat: none;
     background-size: cover;
     background-attachment: fixed;
+}
+.overlay{
+    transform:translateY(-50px);
+    background-color:  #566671 ;
+    width: 100vw;
+    height: 120vh;
+    position: fixed;
+}
+.remove-overlay{
+    visibility: hidden;
+}
+.overlay #plane{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    position: relative;
+    top:20vh;
+    left:45vw;
+    transform: translate(-50%,-50%);
+    animation: plane 2.2s infinite ease-in-out alternate;
+}
+@keyframes plane{
+    from{
+        transform: translateY(-20px);
+    }
+    to{
+        transform: translateY(40px);
+    }
+}
+.clouds{
+    position:relative;
+    width:400px;
+    z-index:-1;
+    overflow:hidden;
+    opacity: .8;
+}
+.cloud-1{
+    position: absolute;
+    top: 10%;
+    right: -30%;
+    animation: cloud-1 8.3s infinite linear .3s;
+}
+.cloud-2{
+    position: absolute;
+    top: 50%;
+    right:-30%;
+    animation: cloud-2 8.3s infinite linear 1.5s;
+}
+.cloud-3{
+    position: absolute;
+    top: 30%;
+    right: -30%;
+    animation: cloud-3 8.3s infinite linear 3.9s;
+}
+@keyframes cloud-1{
+    from{
+        right:-30%;
+    }
+    to{
+        right:100%;
+    }
+}
+@keyframes cloud-2{
+    from{
+        right:-30%;
+    }
+    to{
+        right:100%;
+    }
+}
+@keyframes cloud-3{
+    from{
+        right: -30%;
+    }
+    to{
+        right: 100%;
+    }
 }
 .header{
     display: none;

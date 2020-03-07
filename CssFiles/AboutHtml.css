@@ -6,7 +6,7 @@
 }
 html{
     scroll-behavior: smooth;
-    background-image: radial-gradient(ellipse at left, rgba(38, 215, 221, 0.637),rgba(86, 64, 187, 0.24));
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
     background-repeat: none;
     background-attachment: fixed;
 } 

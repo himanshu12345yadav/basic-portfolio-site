@@ -8,7 +8,8 @@
     color: black;
 }
 body{
-    background-image: linear-gradient(to bottom, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    /* background-image: linear-gradient(to bottom, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%); */
+    background-image: radial-gradient(ellipse at center,#4facfe,#00f2fe);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
