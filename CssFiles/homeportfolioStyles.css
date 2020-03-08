@@ -19,6 +19,7 @@ body{
     width: 100vw;
     height: 120vh;
     position: fixed;
+    z-index: 1;
 }
 .remove-overlay{
     visibility: hidden;
@@ -26,7 +27,7 @@ body{
 .overlay #plane{
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 350px;
     position: relative;
     top:20vh;
     left:45vw;
@@ -68,26 +69,26 @@ body{
 }
 @keyframes cloud-1{
     from{
-        right:-30%;
+        right:-30vw;
     }
     to{
-        right:100%;
+        right:100vw;
     }
 }
 @keyframes cloud-2{
     from{
-        right:-30%;
+        right:-30vw;
     }
     to{
-        right:100%;
+        right:100vw;
     }
 }
 @keyframes cloud-3{
     from{
-        right: -30%;
+        right: -30vw;
     }
     to{
-        right: 100%;
+        right: 100vw;
     }
 }
 .header{
@@ -121,7 +122,6 @@ body{
     color: rgb(192, 222, 229);
     font-size:16px;
     justify-content: space-evenly;
-    /* transition: display .5s ease-in-out; */
 }
 .navbar ul i{
     font-size: 30px;
@@ -161,10 +161,50 @@ iframe{
     .navitems{
         font-size: 14px;
     }
+    .overlay #plane{
+        width: 280px;
+        top: 30vh;
+        left: 40vw;
+    }
+    .overlay .clouds{
+        width: 300px;
+        right: -50vw;
+    }
+    @keyframes cloud-1{
+        from{
+            right:-50vw;
+        }
+        to{
+            right:100vw;
+        }
+    }
+    @keyframes cloud-2{
+        from{
+            right:-50vw;
+        }
+        to{
+            right:100vw;
+        }
+    }
+    @keyframes cloud-3{
+        from{
+            right: -50vw;
+        }
+        to{
+            right: 100vw;
+        }
+    }
 }
 @media (max-width: 600px){
 .navitems{
     font-size: 12px;
+}
+.overlay #plane{
+    width: 240px;
+}
+.overlay .clouds{
+    width: 230px;
+    right: -50%;
 }
 }
 @media (max-width:550px){
@@ -177,5 +217,10 @@ iframe{
     }
     .header{
         display: block;
+    }
+    .overlay #plane{
+        width: 180px;
+        left: 35vw;
+        top: 30vh;
     }
 }

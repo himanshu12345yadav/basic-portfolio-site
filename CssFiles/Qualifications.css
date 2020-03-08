@@ -28,10 +28,10 @@ body{
     position: absolute;
     margin-bottom: 50px;
     right:0px;
-    animation: effects 4s ease-in-out infinite;
+    animation: effects 2s ease-in-out infinite alternate;
 }
 #spacing::after{
-    animation: effects 4s ease-in-out infinite;
+    animation: effects 2s ease-in-out infinite alternate;
     content: "";
     width: 0%;
     border-top: 2.3px solid whitesmoke;
@@ -41,13 +41,10 @@ body{
 }
 @keyframes effects{
     from{
-        width: 0;
-    }
-    50%{
-        width: 100%;
+        width: 0px;
     }
     to{
-        width: 0;
+        width: 100%;
     }
 }
 .projects{
