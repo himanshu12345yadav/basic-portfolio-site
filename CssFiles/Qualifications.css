@@ -16,15 +16,14 @@ body{
 #spacing{
     display: flex;
     flex-direction: column;
-    /* animation: spacing 2s linear .2s infinite; */
     margin: auto;
     line-height: 60px;
+    letter-spacing: 3px;
 }
 #spacing::before{ 
     content: "";
     width: 0%;
     border-top: 2.3px solid whitesmoke;
-    /* margin:auto; */
     border-radius: 20px;
     position: absolute;
     margin-bottom: 50px;
@@ -36,25 +35,18 @@ body{
     content: "";
     width: 0%;
     border-top: 2.3px solid whitesmoke;
-    /* margin:auto; */
     border-radius: 20px;
     position: relative;
     left:0px;
 }
 @keyframes effects{
     from{
-        /* letter-spacing: 8px; */
-        /* transform: rotate(-3deg); */
         width: 0;
     }
     50%{
-        /* letter-spacing: 5px; */
         width: 100%;
-        /* transform: rotate(3deg); */
     }
     to{
-        /* letter-spacing: 8px; */
-        /* transform: rotate(-3deg); */
         width: 0;
     }
 }
