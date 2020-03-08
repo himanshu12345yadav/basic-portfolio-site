@@ -204,8 +204,31 @@ iframe{
 }
 .overlay .clouds{
     width: 230px;
-    right: -50%;
+    right: -60vw;
 }
+@keyframes cloud-1{
+    from{
+        right:-60vw;
+    }
+    to{
+        right:100vw;
+    }
+}
+@keyframes cloud-2{
+    from{
+        right:-60vw;
+    }
+    to{
+        right:100vw;
+    }
+}
+@keyframes cloud-3{
+    from{
+        right: -60vw;
+    }
+    to{
+        right: 100vw;
+    }
 }
 @media (max-width:550px){
     .navbar{
@@ -222,5 +245,10 @@ iframe{
         width: 180px;
         left: 35vw;
         top: 30vh;
+    }
+}
+@media (max-width:350px){
+    .overlay .clouds{
+        right: -70vw;
     }
 }
