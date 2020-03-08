@@ -1,22 +1,21 @@
 window.addEventListener('load', () => {
     console.clear();
-    var node = document.querySelectorAll('.navitems')[0].style.display = 'none';
 });
 
 toggle = (a) => {
     document.getElementById('bar').classList.remove('fa-bars')
     document.getElementById('bar').classList.toggle('fa-times')
     var node = document.querySelectorAll('.navitems');
-    if (node[0].style.display === 'none') {
+    if (node[0].style.display === 'flex') {
         for (i = 0; i < node.length; i++) {
-            node[i].style.display = 'flex';
+            node[i].style.display = 'none';
         }
     }
     else {
         document.getElementById('bar').classList.remove('fa-times')
         document.getElementById('bar').classList.toggle('fa-bars')
         for (i = 0; i < node.length; i++) {
-            node[i].style.display = 'none';
+            node[i].style.display = 'flex';
         }
     }
 }
