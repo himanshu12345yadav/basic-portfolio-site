@@ -30,7 +30,7 @@ body{
 .AboutMe table,td,th,caption{
     border: 2px solid black;
     border-collapse: collapse;
-    font-size: 18px;
+    font-size: 19px;
     text-align: center;
     height: 65px;
 }
@@ -63,9 +63,9 @@ body{
     transform: scale(1.2);
 }
 @media (max-width: 900px){
-.AboutMe table td{
-    height: 60px;
-    font-size: 20px;
+.AboutMe table th,td{
+    height: 75px;
+    font-size: 17px;
 }
 .image{
     width: 300px;
@@ -73,5 +73,46 @@ body{
 #image{
     width: 300px;
 }
-
+}
+@media (max-width: 780px){
+.AboutMe table td{
+        height: 70px;
+        font-size: 16px;
+}
+.image{
+        width: 300px;
+}
+#image{
+        width: 300px;
+}
+}
+@media (max-width: 580px){
+    .AboutMe table{
+        width: 95%;
+    }
+    .AboutMe table td{
+        height: 80px;
+        font-size: 15px;
+    }
+    .image{
+       width: 300px;
+    }
+    #image{
+        width: 300px;
+    }
+}
+@media (max-width: 420px){
+    .AboutMe table{
+        width: 95%;
+    }
+    .AboutMe table td{
+        height: 80px;
+        font-size: 13px;
+    }
+    .image{
+       width: 300px;
+    }
+    #image{
+        width: 300px;
+    }
 }

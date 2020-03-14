@@ -8,7 +8,7 @@
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="./CssFiles/homeportfolioStyles.css">
     <link rel="shortcut icon" href="Images/htmlicons.png" type="image/x-type">
-    <link href="https://fonts.googleapis.com/css?family=Inter|Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -20,35 +20,39 @@
         <img src="Images/cloudsImages.png" alt="cloudsImages" class="clouds cloud-3">
     </div>
     <div class="navbar">
-        <div class="header">
+        <div class="header-icons">
             <img src="Images/htmlicons.png" alt="html icons" height="30">
             <button onclick="toggle(self)"><i class="fa fa-bars" id="bar"></i></button>
         </div>
-        <ul><a href="https://www.wikipedia.com/wiki/www" class="navitems" target="iframe-box"
-                onclick="currentLink(this)"> <i class="fa fa-home"></i>HOME</a></ul>
-        <ul><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d889.7244322777816!2d75.78943382919334!3d26.874990195205292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDUyJzMwLjAiTiA3NcKwNDcnMjMuOSJF!5e0!3m2!1sen!2sin!4v1581791040747!5m2!1sen!2sin"
-                class="navitems" target="iframe-box" onclick="currentLink(this)"><i
-                    class="fa fa-map-marker"></i>LOCATION</a></ul>
+        <div class="links">
+            <ul><a href="https://www.wikipedia.com/wiki/www" class="navitems" target="iframe-box"
+                    onclick="currentLink(this)"> <i class="fa fa-home"></i>HOME</a></ul>
+            <ul><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d889.7244322777816!2d75.78943382919334!3d26.874990195205292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDUyJzMwLjAiTiA3NcKwNDcnMjMuOSJF!5e0!3m2!1sen!2sin!4v1581791040747!5m2!1sen!2sin"
+                    class="navitems" target="iframe-box" onclick="currentLink(this)"><i
+                        class="fa fa-map-marker"></i>LOCATION</a></ul>
 
-        <ul><a href="HtmlFiles/Qualifications.html" class="navitems" target="iframe-box" onclick="currentLink(this)"><i
-                    class="fa fa-tasks"></i>QUALIFICATION</a></ul>
+            <ul><a href="HtmlFiles/Qualifications.html" class="navitems" target="iframe-box"
+                    onclick="currentLink(this)"><i class="fa fa-tasks"></i>QUALIFICATION</a></ul>
 
-        <ul><a href="HtmlFiles/subjects.html" class="navitems" target="iframe-box" onclick="currentLink(this)"><i
-                    class="fa fa-book"></i>SUBJECTS</a></ul>
+            <ul><a href="HtmlFiles/subjects.html" class="navitems" target="iframe-box" onclick="currentLink(this)"><i
+                        class="fa fa-book"></i>SUBJECTS</a></ul>
 
-        <ul><a href="HtmlFiles/AboutHtml.html" class="navitems" target="iframe-box" onclick="currentLink(this)"><i
-                    class="fa fa-html5"></i>ABOUT
-                HTML</a></ul>
+            <ul><a href="HtmlFiles/AboutHtml.html" class="navitems" target="iframe-box" onclick="currentLink(this)"><i
+                        class="fa fa-html5"></i>ABOUT
+                    HTML</a></ul>
 
-        <ul><a href="HtmlFiles/AboutMe.html" class="navitems" target="iframe-box" onclick="currentLink(this)"><i
-                    class="fa fa-user"></i>ABOUT ME</a>
-        </ul>
+            <ul><a href="HtmlFiles/AboutMe.html" class="navitems" target="iframe-box" onclick="currentLink(this)"><i
+                        class="fa fa-user"></i>ABOUT ME</a>
+            </ul>
+        </div>
     </div>
-    <div class="text-container">
-        <span id="typing-text"></span>
-        <span class="blink">|</span>
-    </div>
-    <iframe src="https://www.wikipedia.com/wiki/www" frameborder="0" class="iframe-box" name="iframe-box"></iframe>
+    <section class="body-content">
+        <div class="text-container">
+            <span id="typing-text"></span>
+            <span class="blink">|</span>
+        </div>
+        <iframe src="https://www.wikipedia.com/wiki/www" frameborder="0" class="iframe-box" name="iframe-box"></iframe>
+    </section>
 </body>
 <script defer src="Home.js"></script>
 

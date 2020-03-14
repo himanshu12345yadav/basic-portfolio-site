@@ -3,21 +3,8 @@ window.addEventListener('load', () => {
 });
 
 toggle = (a) => {
-    document.getElementById('bar').classList.remove('fa-bars')
-    document.getElementById('bar').classList.toggle('fa-times')
-    var node = document.querySelectorAll('.navitems');
-    if (node[0].style.display === 'flex') {
-        for (i = 0; i < node.length; i++) {
-            node[i].style.display = 'none';
-        }
-    }
-    else {
-        document.getElementById('bar').classList.remove('fa-times')
-        document.getElementById('bar').classList.toggle('fa-bars')
-        for (i = 0; i < node.length; i++) {
-            node[i].style.display = 'flex';
-        }
-    }
+    var container = document.getElementsByClassName('body-content')[0];
+    container.classList.toggle('body-content-down');
 }
 window.addEventListener('resize', () => {
     var node = document.querySelectorAll('.navitems');
@@ -55,7 +42,7 @@ const typein = () => {
     else if (i === text[b].length) {
         i = 0;
         displaycomplete = true;
-        j = text[b].length;// This line is very crucial for the program...
+        j = text[b].length;// This line is very crucial...
         setTimeout(driver)// This line is very crucuial...
         return undefined;
     }
@@ -85,7 +72,7 @@ function driver() {
 
     }
     else if (displaycomplete) {
-        setTimeout(typeout, 3000);
+        setTimeout(typeout, 2500);
     }
     return undefined;
 };
