@@ -6,7 +6,6 @@
     font-weight: normal;
 }
 body{
-    background-image: radial-gradient(ellipse at center, #00c6fb 0%, #005bea 100%);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

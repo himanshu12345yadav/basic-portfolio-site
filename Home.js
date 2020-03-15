@@ -1,27 +1,20 @@
 window.addEventListener('load', () => {
     console.clear();
 });
-
-toggle = (a) => {
-    var container = document.getElementsByClassName('body-content')[0];
-    container.classList.toggle('body-content-down');
-}
-window.addEventListener('resize', () => {
-    var node = document.querySelectorAll('.navitems');
-    for (i = 0; i < node.length; i++) {
-        node[i].style.display = 'flex';
-    }
-});
-currentLink = (obj) => {
-    var elements = document.getElementsByClassName('navitems');
-    for (var i = 0; i < elements.length; i++) {
-        elements[i].classList.remove('activeLink');
-    }
-    obj.classList.add('activeLink');
-}
 window.addEventListener('load', () => {
     document.querySelectorAll('.overlay')[0].classList.add('remove-overlay');
-})
+});
+document.getElementsByClassName('burger')[0].addEventListener('click', () => {
+    obj1.classList.toggle('burger-open');
+});
+const obj1 = document.getElementsByClassName('burger-content')[0];
+const links = document.getElementsByClassName('links')[0];
+const linkItems = document.querySelectorAll('.links ul a');
+const typingText = document.getElementById("typing-text");
+const elements = document.getElementsByClassName('navitems');
+var count = 0, b = 0, j = 0;
+var i = 0;
+var displaycomplete = false;
 const text_1 = "Hey there, Welcome! :)";
 const text_2 = "I am a full stack developer";
 const text_3 = "I also do artificial intelligence in python";
@@ -29,11 +22,27 @@ const text_4 = "and also ethical hacking with kali linux";
 const text_5 = "I also have great interest in robotics";
 const text_6 = "in simple words i am a computer enthusiast";
 const text = [text_1, text_2, text_3, text_4, text_5, text_6];
-const typingText = document.getElementById("typing-text");
-var i = 0;
-var b = 0;
-var j;
-var displaycomplete = false;
+
+
+toggle = (a) => {
+    links.classList.toggle('links-down');
+    const animateLinks = setInterval(() => {
+        if (count < 6) {
+            linkItems[count].classList.toggle('items-move');
+            count++;
+        }
+        else {
+            clearInterval(animateLinks);
+        }
+    }, 50);
+}
+currentLink = (obj) => {
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].classList.remove('activeLink');
+    }
+    obj.classList.add('activeLink');
+}
+
 const typein = () => {
     if (!displaycomplete && (i < text[b].length)) {
         typingText.innerHTML += text[b][i];
@@ -54,7 +63,7 @@ const typeout = () => {
         typingText.innerHTML = typingText.innerHTML.slice(0, --j);
         const timeout = setTimeout(typeout, 20);
     }
-    else if (j == 0) {
+    else if (j === 0) {
         displaycomplete = false;
         setTimeout(driver);// This line is very Crucial...
         if (b === text.length - 1) {

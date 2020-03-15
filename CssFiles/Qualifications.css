@@ -8,7 +8,6 @@
     color: black;
 }
 body{
-    background-image: radial-gradient(ellipse at center,#4facfe,#00f2fe);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }

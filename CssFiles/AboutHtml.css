@@ -6,10 +6,10 @@
 }
 html{
     scroll-behavior: smooth;
-    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    background: transparent;
     background-repeat: none;
     background-attachment: fixed;
-} 
+}
 .arrow-up i{
     position: fixed;
     top:80vh;
@@ -19,6 +19,13 @@ html{
     opacity: .5;
     color: #3b444b;
     cursor: pointer;
+}
+#main-heading{
+    margin-top: 20px;
+    border:30px solid;
+    border-color: #00dbde;
+    border-right-color:transparent;
+    border-left-color:transparent;
 }
 .contents{
     display: flex;
@@ -90,9 +97,6 @@ li:hover:after{
     border-bottom: 0;
 }
 @media (max-width: 810px){
-    .mainHeading{
-        font-size:30px;
-    }
     #mainHeading{
         font-size: 20px;
     }
@@ -111,9 +115,6 @@ li:hover:after{
 @media (max-width: 680px){
     .htmlTags table th,td{
         height: 40px;
-    }
-    .mainHeading{
-        font-size:20px;
     }
     #mainHeading{
         font-size: 16px;
