@@ -11,13 +11,13 @@ html{
     scroll-behavior : smooth;
 }
 body{
-    background-image: url(/Images/beachPhoto.jpg);
+    background-image: url(../Images/beachPhoto.jpg);
     background-repeat: none;
     background-size: cover;
     background-attachment: fixed;
 }
 .overlay{
-    background-image: url(/Images/rainyWeather.jpg);
+    background-image: url(../Images/rainyWeather.jpg);
     background-size: cover;
     top: 0;
     width: 100vw;
