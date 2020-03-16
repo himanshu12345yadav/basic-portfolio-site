@@ -25,6 +25,7 @@ const text = [text_1, text_2, text_3, text_4, text_5, text_6];
 
 
 toggle = (a) => {
+    count = 0;
     links.classList.toggle('links-down');
     const animateLinks = setInterval(() => {
         if (count < 6) {
