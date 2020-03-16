@@ -158,20 +158,19 @@ body{
     align-items: center;
     margin: auto;
     margin-top: 5vh;
-    width: 80%;
+    width: auto;
     justify-content: center;
-    height: 50px;
-    letter-spacing: 0px;
     text-transform: capitalize;
     border-radius: 15px;
+    flex-wrap: wrap;
 }
 #typing-text{
     font-size: 28px;
     color: white;
     overflow: hidden;
+    white-space: nowrap;
 }
 .blink {
-    transform: translateY(-3px);
     font-size: 36px;
     font-weight: lighter;
     color: whitesmoke;
@@ -387,6 +386,7 @@ iframe{
     .text-container{
         width: auto;
         text-align: justify;
+        overflow: hidden;
     }
     #typing-text{
         font-size: 18px;
@@ -411,13 +411,16 @@ iframe{
 }
 @media (max-width:365px){
     .text-container{
-        width: 99%;
+        width: auto;
+        overflow: hidden;
     }
     #typing-text{
         font-size: 15px;
+        overflow: hidden;
     }
     .blink{
-        font-size: 32px;
+        font-size: 30px;
+        transform: translateY(1px);
     }
     .overlay .clouds{
         right: -70vw;

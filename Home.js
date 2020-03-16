@@ -4,14 +4,12 @@ window.addEventListener('load', () => {
 window.addEventListener('load', () => {
     document.querySelectorAll('.overlay')[0].classList.add('remove-overlay');
 });
-document.getElementsByClassName('burger')[0].addEventListener('click', () => {
-    obj1.classList.toggle('burger-open');
-});
-const obj1 = document.getElementsByClassName('burger-content')[0];
+const burger = document.getElementsByClassName('burger-content')[0];
 const links = document.getElementsByClassName('links')[0];
 const linkItems = document.querySelectorAll('.links ul a');
 const typingText = document.getElementById("typing-text");
 const elements = document.getElementsByClassName('navitems');
+const bodyContent = document.getElementsByClassName('body-content');
 var count = 0, b = 0, j = 0;
 var i = 0;
 var displaycomplete = false;
@@ -25,6 +23,7 @@ const text = [text_1, text_2, text_3, text_4, text_5, text_6];
 
 
 toggle = (a) => {
+    console.log(`scrollX: ${document.body.scrollX} and scrollY: ${document.body.scrollY}`);
     count = 0;
     links.classList.toggle('links-down');
     const animateLinks = setInterval(() => {
@@ -36,12 +35,24 @@ toggle = (a) => {
             clearInterval(animateLinks);
         }
     }, 50);
+    if (links.classList[1] === 'links-down') {
+        burger.classList.toggle('burger-open');
+        document.body.style.position = 'fixed';
+        document.body.style.left = '0px';
+        document.body.style.right = '0px';
+        document.body.style.top = `-${window.scrollY}px`;
+    } else {
+        document.body.style.position = '';
+        document.body.style.top = '';
+        document.body.style.left = '';
+        burger.classList.toggle('burger-open');
+    }
 }
 currentLink = (obj) => {
     for (var i = 0; i < elements.length; i++) {
         elements[i].classList.remove('activeLink');
     }
-    obj.classList.add('activeLink');
+    toggle(obj);
 }
 
 const typein = () => {
