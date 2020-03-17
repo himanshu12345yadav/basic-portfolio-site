@@ -173,7 +173,7 @@ body{
 .blink {
     font-size: 36px;
     font-weight: lighter;
-    color: whitesmoke;
+    color: aliceblue;
     animation: blink-Fade .2s ease infinite alternate;
 }
 @keyframes blink-Fade {
@@ -265,13 +265,26 @@ iframe{
     width: 95vw;
     height: 750px;
     border-radius: 20px;
-} 
+}
+#copyright{
+    margin-bottom: 10px;
+}
+.footer{
+    font-size: 17px;
+    text-align: center;
+}
+#footer-statement{
+    margin-bottom: 20px;
+}
 @media (max-width: 890px){
     .text-container{
         width: 90%;
     }
     #typing-text{
-        font-size: 25px;
+        font-size: 19px;
+    }
+    footer{
+        font-size: 16px;
     }
 }
 @media (max-width: 800px){
@@ -317,6 +330,9 @@ iframe{
             right: 100vw;
         }
     }
+    .footer{
+        font-size: 15px;
+    }
 }
 @media (max-width: 600px){
 .text-container{
@@ -358,6 +374,9 @@ iframe{
     to{
         right: 100vw;
     }
+}
+.footer{
+    font-size: 14px;
 }
 }
 @media screen and (max-width:550px){
@@ -408,6 +427,9 @@ iframe{
         left: 35vw;
         top: 30vh;
     }
+    footer{
+        font-size: 13px;
+    }
 }
 @media (max-width:365px){
     .text-container{
@@ -424,5 +446,8 @@ iframe{
     }
     .overlay .clouds{
         right: -70vw;
+    }
+    .footer{
+        font-size: 12px;
     }
 }
