@@ -23,7 +23,6 @@ const text = [text_1, text_2, text_3, text_4, text_5, text_6];
 
 
 toggle = (a) => {
-    console.log(`scrollX: ${document.body.scrollX} and scrollY: ${document.body.scrollY}`);
     count = 0;
     links.classList.toggle('links-down');
     const animateLinks = setInterval(() => {
@@ -52,7 +51,9 @@ currentLink = (obj) => {
     for (var i = 0; i < elements.length; i++) {
         elements[i].classList.remove('activeLink');
     }
-    toggle(obj);
+    if (window.screen.width < 550) {
+        toggle(obj);
+    }
 }
 
 const typein = () => {
