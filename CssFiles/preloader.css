@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: #363434;
+    position: fixed;
+    z-index: 10;
+}
+.ball-cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    margin: 30vh auto;
+    /* border: 2px solid white; */
+}
+.line-1 {
+    z-index: 1;
+    position: absolute;
+    width: 260px;
+    /* background-color: white; */
+    height: 3px;
+}
+.line-1::before {
+    width: inherit;
+    height: inherit;
+    background-color: inherit;
+    position: absolute;
+    content: '';
+    transform: rotateZ(30deg);
+}
+
+.line-1::after {
+    width: inherit;
+    height: inherit;
+    background-color: inherit;
+    position: absolute;
+    content: '';
+    transform: rotateZ(-30deg);
+}
+.line-2 {
+    width: 260px;
+    height: 3px;
+    position: absolute;
+    /* background-color: white; */
+    z-index: 1;
+    transform: rotateZ(60deg);
+}
+.line-2::before {
+    content: '';
+    width: inherit;
+    height: inherit;
+    background-color: inherit;
+    position: absolute;
+    transform: rotateZ(30deg);
+}
+.line-2::after {
+    content: '';
+    width: inherit;
+    height: inherit;
+    background-color: inherit;
+    position: absolute;
+    transform: rotateZ(60deg);
+}
+.balls {
+    position: absolute;
+    background-color: #3ac5f0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* transition: transform 0.2s ease-in; */
+}
+/* big circle radius is 120px */
+/* small circles raadius is 20px all placed on the diameter */
+#ball-1 {
+    transform: translateX(-130px) scale(0);
+}
+#ball-2 {
+    transform: translate(-110px, -65px) scale(0);
+}
+#ball-3 {
+    transform: translate(-65px, -113px) scale(0);
+}
+#ball-4 {
+    transform: translateY(-130px) scale(0);
+}
+#ball-5 {
+    transform: translate(65px, -113px) scale(0);
+}
+#ball-6 {
+    transform: translate(110px, -65px) scale(0);
+}
+#ball-7 {
+    transform: translateX(130px) scale(0);
+}
+#ball-8 {
+    transform: translate(110px, 65px) scale(0);
+}
+#ball-9 {
+    transform: translate(65px, 113px) scale(0);
+}
+#ball-10 {
+    transform: translateY(130px) scale(0);
+}
+#ball-11 {
+    transform: translate(-65px, 113px) scale(0);
+}
+#ball-12 {
+    transform: translate(-110px, 65px) scale(0);
+}
+
+@keyframes scale_0 {
+    from {
+        transform: translateX(-130px) scale(0);
+    }
+    to {
+        transform: translateX(-130px) scale(1);
+    }
+}
+@keyframes scale_1 {
+    from {
+        transform: translate(-110px, -65px) scale(0);
+    }
+    to {
+        transform: translate(-110px, -65px) scale(1);
+    }
+}
+@keyframes scale_2 {
+    from {
+        transform: translate(-65px, -113px) scale(0);
+    }
+    to {
+        transform: translate(-65px, -113px) scale(1);
+    }
+}
+@keyframes scale_3 {
+    from {
+        transform: translateY(-130px) scale(0);
+    }
+    to {
+        transform: translateY(-130px) scale(1);
+    }
+}
+@keyframes scale_4 {
+    from {
+        transform: translate(65px, -113px) scale(0);
+    }
+    to {
+        transform: translate(65px, -113px) scale(1);
+    }
+}
+
+@keyframes scale_5 {
+    from {
+        transform: translate(110px, -65px) scale(0);
+    }
+    to {
+        transform: translate(110px, -65px) scale(1);
+    }
+}
+@keyframes scale_6 {
+    from {
+        transform: translateX(130px) scale(0);
+    }
+    to {
+        transform: translateX(130px) scale(1);
+    }
+}
+@keyframes scale_7 {
+    from {
+        transform: translate(110px, 65px) scale(0);
+    }
+    to {
+        transform: translate(110px, 65px) scale(1);
+    }
+}
+@keyframes scale_8 {
+    from {
+        transform: translate(65px, 113px) scale(0);
+    }
+    to {
+        transform: translate(65px, 113px) scale(1);
+    }
+}
+@keyframes scale_9 {
+    from {
+        transform: translateY(130px) scale(0);
+    }
+    to {
+        transform: translateY(130px) scale(1);
+    }
+}
+@keyframes scale_10 {
+    from {
+        transform: translate(-65px, 113px) scale(0);
+    }
+    to {
+        transform: translate(-65px, 113px) scale(1);
+    }
+}
+@keyframes scale_11 {
+    from {
+        transform: translate(-110px, 65px) scale(0);
+    }
+    to {
+        transform: translate(-110px, 65px) scale(1);
+    }
+}

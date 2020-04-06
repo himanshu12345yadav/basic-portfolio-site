@@ -1,39 +1,39 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family:'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-html{
+html {
     scroll-behavior: smooth;
     background: transparent;
     background-repeat: none;
     background-attachment: fixed;
 }
-.arrow-up i{
+.arrow-up i {
     position: fixed;
-    top:80vh;
-    left:95vw;
+    top: 80vh;
+    left: 95vw;
     font-size: 50px;
     background-color: transparent;
-    opacity: .5;
+    opacity: 0.5;
     color: #3b444b;
     cursor: pointer;
 }
-#main-heading{
+#main-heading {
     margin-top: 20px;
-    border:30px solid;
+    border: 30px solid;
     border-color: #00dbde;
-    border-right-color:transparent;
-    border-left-color:transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
 }
-.contents{
+.contents {
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
 }
-.contents ul{
+.contents ul {
     background-color: rgba(66, 204, 100, 0.11);
     display: flex;
     flex-direction: column;
@@ -43,111 +43,122 @@ html{
     overflow: none;
     border: 2px solid black;
 }
-.contents ul li{
+.contents ul li {
     display: flex;
     flex-direction: column;
 }
-li:after{
+li:after {
     content: '';
-    margin:auto;
+    margin: auto;
     border: 2px solid whitesmoke;
     width: 0px;
     border-radius: 10px;
     visibility: hidden;
-    transition: width .5s ease-in-out,visibility .5s ease-in-out;
+    transition: width 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
-li:hover:after{
+li:hover:after {
     width: 100%;
     visibility: visible;
 }
-.contents ul li{
+.contents ul li {
     list-style-type: none;
     font-size: 20px;
     height: 50px;
     padding: 10px;
 }
-.contents ul li a{
-    text-decoration:none;
-    color:black;
+.contents ul li a {
+    text-decoration: none;
+    color: black;
 }
-.htmlTags{
+.htmlTags {
     display: block;
     margin: 100px auto;
 }
-.htmlTags table{
+.htmlTags table {
     margin: auto;
     width: 70%;
     border: 0px;
 }
-.htmlTags table,td,th,caption{
+.htmlTags table,
+td,
+th,
+caption {
     border: 2px solid black;
     border-collapse: collapse;
     font-size: 18px;
     text-align: center;
     height: 50px;
 }
-.htmlTags tr:nth-child(even){
+.htmlTags tr:nth-child(even) {
     background-color: mediumturquoise;
 }
-.htmlTags th{
+.htmlTags th {
     background-color: lightseagreen;
 }
-.htmlTags caption{
+.htmlTags caption {
     background-color: cyan;
     border-bottom: 0;
 }
-@media (max-width: 810px){
-    #mainHeading{
+@media (max-width: 810px) {
+    #mainHeading {
         font-size: 20px;
     }
-    .contents ul li{
+    .contents ul li {
         font-size: 16px;
         height: 45px;
     }
-    .htmlTags table,td,th,caption{
+    .htmlTags table,
+    td,
+    th,
+    caption {
         font-size: 15px;
     }
-    .arrow-up i{
-        left:95vw;
+    .arrow-up i {
+        left: 95vw;
         font-size: 45px;
     }
 }
-@media (max-width: 680px){
-    .htmlTags table th,td{
+@media (max-width: 680px) {
+    .htmlTags table th,
+    td {
         height: 40px;
     }
-    #mainHeading{
+    #mainHeading {
         font-size: 16px;
     }
-    .contents ul li{
+    .contents ul li {
         font-size: 14px;
         height: 40px;
     }
-    .htmlTags table,td,th,caption{
+    .htmlTags table,
+    td,
+    th,
+    caption {
         font-size: 13px;
     }
-    .arrow-up i{
-        left:90vw;
-        font-size:40px;
+    .arrow-up i {
+        left: 90vw;
+        font-size: 40px;
     }
 }
-@media (max-width: 590px){
-    .htmlTags table th,td{
+@media (max-width: 590px) {
+    .htmlTags table th,
+    td {
         height: 60px;
     }
-    .htmlTags table{
+    .htmlTags table {
         width: 90%;
     }
-    #mainHeading{
+    #mainHeading {
         font-size: 14px;
     }
-    .contents ul{
+    .contents ul {
         width: 300px;
     }
-    .contents ul li{
+    .contents ul li {
         font-size: 16px;
     }
-    .arrow-up i{
-        left:90vw;
+    .arrow-up i {
+        left: 90vw;
     }
 }
