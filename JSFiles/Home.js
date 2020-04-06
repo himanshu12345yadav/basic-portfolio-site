@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
     console.clear();
-    document.getElementsByTagName('script')[2].remove();
+    document.getElementsByTagName('script')[1].remove();
     document.getElementsByTagName('link')[2].remove();
 });
 
