@@ -1,9 +1,25 @@
 # Basic-Portfolio-Site
+___
+# About
 
-## This is a _basic portfolio site_ made in HTML,CSS and JavaScript with crisper _effects_ and _awesome design_
+This is a basic portfolio site part of a university project made in **HTML5**, **CSS3** and **JavaScript** with crisper _effects_ and **awesome design**.
 
-> ## Want to check how does the site look like [Click Here](https://himanshu12345yadav.github.io/basic-portfolio-site/Home.html)
 
-> ## Now website is responsive Feel Free To check it out!....
+# Features
 
-> ## Check it out on your mobile device also, to see changes...
+* Website is Fully responsive.
+* Loaded with amazing transitions and effects.
+* All effect are fully customisable, made with vanilla javacript. Just look into the javascript files.
+
+# Getting Started
+#### You can run the website straight into your browser, just [`Click Here`](https://himanshu12345yadav.github.io/basic-portfolio-site/Home.html)
+
+
+## Wanna make some tweaks, feel free to do so.
+
+First clone this repository.
+```bash
+git clone https://github.com/himanshu12345yadav/basic-portfolio-site.git
+cd basic-portfolio-site
+```
+`Happy Hacking!`
