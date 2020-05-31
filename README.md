@@ -14,7 +14,7 @@ This is a basic portfolio site part of a university project made in **Next JS** 
 
 # Getting Started
 
-#### You can run the website straight into your browser, just [`Click Here`](https://himanshu12345yadav.github.io/basic-portfolio-site)
+#### You can run the website straight into your browser, just [`Click Here`](https://basic-portfolio-site.now.sh)
 
 ## Wanna make some tweaks, feel free to do so.
 
