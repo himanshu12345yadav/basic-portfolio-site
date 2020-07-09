@@ -4,17 +4,17 @@
 
 # About
 
-This is a basic portfolio site part of a university project made in **Next JS** with crisper _effects_ and **awesome design**.
+This is a basic portfolio site part of a university project made in **React JS** with crisper _effects_ and **awesome design**.
 
 # Features
 
--   Website is Fully responsive.
--   Loaded with amazing transitions and effects.
--   All effect are fully customisable, made with vanilla javacript. Just look into the javascript files.
+- Website is Fully responsive.
+- Loaded with amazing transitions and effects.
+- All effect are fully customisable, made with vanilla javacript. Just look into the javascript files.
 
 # Getting Started
 
-#### You can run the website straight into your browser, just [`Click Here`](https://basic-portfolio-site.now.sh)
+#### You can run the website straight into your browser, just [`Click Here`](https://himanshu12345yadav.github.io/basic-portfolio-site/)
 
 ## Wanna make some tweaks, feel free to do so.
 

@@ -1,0 +1,84 @@
+.AboutMe {
+  margin: 30px auto;
+  text-transform: capitalize;
+}
+
+.AboutMe table {
+  margin: auto;
+  width: 90%;
+  border: 0px;
+}
+.AboutMe table {
+  transform: translateY(-20px);
+}
+.AboutMe table td {
+  width: 300px;
+}
+.AboutMe table,
+td,
+th {
+  border-right: 0;
+  border-collapse: collapse;
+  font-size: 20px;
+  text-align: center;
+  height: 65px;
+}
+.AboutMe tr:nth-child(even) {
+  background-color: var(--light-dark);
+}
+.AboutMe th {
+  color: var(--white);
+  height: 50px;
+}
+.heading {
+  color: var(--theme);
+}
+.profile_image {
+  border: 2px solid var(--theme);
+  display: grid;
+  place-items: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: auto;
+  overflow: hidden;
+}
+.profile_image img {
+  width: inherit;
+  transition: transform 0.4s ease-in-out;
+}
+.profile_image img:hover {
+  cursor: zoom-in;
+  transform: scale(1.1);
+}
+@media (max-width: 992px) {
+  .AboutMe table th,
+  td {
+    height: 75px;
+    font-size: 17px;
+  }
+}
+@media (max-width: 768px) {
+  .AboutMe table td {
+    height: 70px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .AboutMe table {
+    width: 95%;
+  }
+  .AboutMe table td {
+    height: 80px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 365px) {
+  .AboutMe table {
+    width: 95%;
+  }
+  .AboutMe table td {
+    height: 80px;
+    font-size: 13px;
+  }
+}

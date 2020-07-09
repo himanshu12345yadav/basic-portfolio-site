@@ -1,0 +1,35 @@
+.spinner {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--dark);
+  z-index: 1111;
+}
+.spinner-loader {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 5px solid var(--theme);
+  border-right-color: var(--white);
+  border-bottom-color: var(--white);
+  border-left-color: var(--white);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: Loader 1s linear infinite;
+}
+
+@keyframes Loader {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

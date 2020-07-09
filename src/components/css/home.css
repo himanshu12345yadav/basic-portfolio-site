@@ -1,0 +1,29 @@
+.container {
+  margin: 3rem auto 13rem;
+  display: grid;
+  place-items: center;
+}
+.banner img {
+  height: 15rem;
+  border-radius: 50%;
+}
+.intro h1 {
+  font-size: 2rem;
+  margin: 2rem;
+  color: var(--theme);
+  letter-spacing: 0.1rem;
+  font-family: "Lobster", cursive;
+  transform: rotateZ(-5deg);
+  text-align: center;
+}
+.intro h2 {
+  font-family: "Lobster", cursive;
+  font-size: 1.5rem;
+  color: var(--theme);
+  text-align: center;
+}
+@media (max-width: 780px) {
+  .image img {
+    height: 15rem;
+  }
+}

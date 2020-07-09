@@ -1,0 +1,150 @@
+.fab {
+  position: fixed;
+  top: 80vh;
+  right: 20px;
+  background-color: transparent;
+  width: 50px;
+  color: var(--white);
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: var(--theme);
+  text-align: center;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 10px #36363673;
+}
+.heading{
+    text-align: center;
+    margin: 2rem;
+}
+.subheading{
+    color: var(--dark);
+    margin: 2rem;
+}
+.contents {
+  display: grid;
+  place-items: center;
+}
+.contents ul {
+  background-color: #5553584d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 30%;
+  max-width: 60%;
+  border-radius: 20px;
+}
+.contents ul li {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+}
+.contents ul li {
+  list-style-type: none;
+  font-size: 20px;
+  height: 50px;
+  padding: 10px;
+}
+.contents ul li a {
+  text-decoration: none;
+  color: var(--dark);
+}
+.htmlTags {
+  display: block;
+  margin: 100px auto;
+}
+.htmlTags table {
+  margin: auto;
+  width: 70%;
+  border: 0px;
+}
+.htmlTags table,
+td,
+th,
+caption {
+  border-collapse: collapse;
+  font-size: 1rem;
+  text-align: center;
+  height: 50px;
+}
+.htmlTags tr:nth-child(even) {
+  background-color: var(--light-white);
+}
+td:first-of-type{
+    color: var(--theme);
+    font-weight: bold;
+}
+.htmlTags th {
+  font-size: 1rem;
+  color: var(--white);
+  font-weight: bold;
+  background-color: var(--light-dark);
+}
+.htmlTags caption {
+  border-bottom: 0;
+  font-size: 1.2rem;
+}
+@media (max-width: 992px) {
+  #heading {
+    font-size: 20px;
+  }
+  .contents ul li {
+    font-size: 16px;
+    height: 45px;
+  }
+  .htmlTags table,
+  td,
+  th,
+  caption {
+    font-size: 15px;
+  }
+  .arrow-up i {
+    left: 95vw;
+    font-size: 45px;
+  }
+}
+@media (max-width: 768px) {
+  .htmlTags table th,
+  td {
+    height: 40px;
+  }
+  #heading {
+    font-size: 16px;
+  }
+  .contents ul li {
+    font-size: 14px;
+    height: 40px;
+  }
+  .htmlTags table,
+  td,
+  th,
+  caption {
+    font-size: 13px;
+  }
+  .arrow-up i {
+    left: 90vw;
+    font-size: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .htmlTags table th,
+  td {
+    height: 60px;
+  }
+  .htmlTags table {
+    width: 90%;
+  }
+  #heading {
+    font-size: 14px;
+  }
+  .contents ul {
+    width: 300px;
+  }
+  .contents ul li {
+    font-size: 16px;
+  }
+  .arrow-up i {
+    left: 90vw;
+  }
+}
