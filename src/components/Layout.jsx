@@ -1,20 +1,31 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "../assets/logo.png";
-import TypingEffect from "./typing";
+import { useEffect } from "react";
+
+
+const toggle = () => {
+  const burger = document.getElementsByClassName("burger-content")[0];
+  const links = document.getElementsByClassName("nav-links")[0];
+
+  links.classList.toggle("nav-links-down");
+  document.body.classList.toggle("modal");
+  if (links.classList.contains("links-down")) {
+    burger.classList.toggle("burger-open");
+  } else {
+    burger.classList.toggle("burger-open");
+  }
+};
 
 const Layout = (props) => {
-  const toggle = () => {
-    const burger = document.getElementsByClassName("burger-content")[0];
+  useEffect(() => {
     const links = document.getElementsByClassName("nav-links")[0];
-    links.classList.toggle("nav-links-down");
-    document.body.classList.toggle("modal");
-    if (links.classList.contains("links-down")) {
-      burger.classList.toggle("burger-open");
-    } else {
-      burger.classList.toggle("burger-open");
+    links.onclick = () => {
+      if(document.body.classList.contains('modal')){
+        toggle();
+      }
     }
-  };
+  })
 
   return (
     <React.Fragment>
@@ -71,10 +82,11 @@ const Layout = (props) => {
         </div>
       </nav>
       <div className="overlay"></div>
-      <TypingEffect />
       <div>{props.children}</div>
       <footer id="copyright">
+        <span>
         &copy; 2020 All Rights Reserved
+        </span>
         <span className="youtube">
           <a
             href="https://www.youtube.com/channel/UC5umyuP_33AQ-WGvHEexnOA"

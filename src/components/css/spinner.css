@@ -7,22 +7,22 @@
   bottom: 0;
   width: 100vw;
   height: 100vh;
-  background-color: var(--dark);
+  background-color: var(--white-muted);
   z-index: 1111;
 }
 .spinner-loader {
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border: 5px solid var(--theme);
-  border-right-color: var(--white);
-  border-bottom-color: var(--white);
-  border-left-color: var(--white);
+  border-right-color:  transparent;
+  border-bottom-color: transparent;
+  border-left-color:  transparent;
   border-radius: 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: Loader 1s linear infinite;
+  animation: Loader .8s linear infinite;
 }
 
 @keyframes Loader {

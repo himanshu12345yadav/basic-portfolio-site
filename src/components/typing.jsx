@@ -41,9 +41,10 @@ const TypingEffect = () => {
   useEffect(() => {
     if (!complete) {
       setTimeout(typein, 100);
-    } else{
+    } else {
       setTimeout(typeout, 2500);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [complete]);
 
   return (

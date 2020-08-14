@@ -1,14 +1,16 @@
 import React from "react";
-import './css/subjects.css';
+import "./css/subjects.css";
 
 const Subjects = () => {
   return (
     <>
-      <h2 align="center" className="heading">
-       Prescribed Course Structure for First Year 2 nd Semester Students
-      </h2>
-      <hr/>
-      <div className="table">
+      <div className="syllabus-banner">
+        <h1 className="syllabus-banner-headline">Syllabus</h1>
+        <p className="syllabus-banner-content">
+          Prescribed syllabus for First Year Second Semester Students
+        </p>
+      </div>
+      <div className="subjects">
         <table>
           <thead>
             <tr>

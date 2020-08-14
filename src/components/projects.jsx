@@ -3,7 +3,13 @@ import "./css/projects.css";
 const Projects = () => {
   return (
     <>
-      <h1 className="heading">PROJECTS</h1>
+      <section className="projects-banner">
+        <h1 className="projects-heading">Projects</h1>
+        <p className="projects-banner-content">
+          These are some projects performed by me. You can find some of
+          them and many more in detail on my github profile. Many more are on the way...
+        </p>
+      </section>
       <div className="projects">
         <table>
           <thead>
@@ -19,7 +25,7 @@ const Projects = () => {
             </tr>
             <tr>
               <td>image processing</td>
-              <td>matlab,OpenCv(Python)</td>
+              <td>matlab,OpenCV(Python)</td>
             </tr>
             <tr>
               <td>gradient descent optimisation algorithm</td>
@@ -27,7 +33,7 @@ const Projects = () => {
             </tr>
             <tr>
               <td>Full Fledged Website</td>
-              <td>React JS,php,sql,nodejs</td>
+              <td>React JS,Node JS,Firebase,</td>
             </tr>
             <tr>
               <td>audio Fingerprinting(spectrogram)</td>

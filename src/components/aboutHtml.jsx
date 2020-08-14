@@ -1,16 +1,47 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./css/aboutHtml.css";
+
 const AboutHtml = () => {
+  const fab = useRef(null);
+  const handleScroll = () => {
+    if (window.scrollY >= 800) {
+      fab.current.classList.remove("fab-inactive");
+      fab.current.classList.add("fab-active");
+    } else {
+      fab.current.classList.remove("fab-active");
+      fab.current.classList.add("fab-inactive");
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <h1 align="center" className="heading">
-        Html Basic Tags and their Usage
-      </h1>
+      <section className="section-hero">
+        <h1 align="center" className="section-hero-heading">
+          Hyper Text Markup Language
+        </h1>
+        <p className="html-info">
+          Hypertext Markup Language (HTML) is the standard markup language for
+          documents designed to be displayed in a web browser. It can be
+          assisted by technologies such as Cascading Style Sheets (CSS) and
+          scripting languages such as JavaScript.{" "}
+        </p>
+      </section>
       <h1 align="center" className="subheading">
         Contents
       </h1>
-      <button className="fab" onClick={() => window.scrollTo(0, 0)}>
-        <span class="material-icons">arrow_upward</span>
+      <button
+        className="fab fab-inactive"
+        ref={fab}
+        title="scroll to top"
+        onClick={() => window.scrollTo(0, 0)}
+      >
+        <span className="material-icons">arrow_upward</span>
       </button>
       <div className="contents">
         <ul>
@@ -34,7 +65,7 @@ const AboutHtml = () => {
           </li>
         </ul>
       </div>
-      <div className="htmlTags">
+      <div className="htmlTags" id="Tags">
         <table>
           <caption>HTML TAGS</caption>
           <thead>
@@ -102,7 +133,7 @@ const AboutHtml = () => {
           </tbody>
         </table>
       </div>
-      <div className="htmlTags">
+      <div className="htmlTags" id="basicTags">
         <table>
           <caption style={{ paddingTop: "7px" }}>BASIC TAGS</caption>
           <thead>
@@ -159,7 +190,7 @@ const AboutHtml = () => {
           </tbody>
         </table>
       </div>
-      <div className="htmlTags">
+      <div className="htmlTags" id="tableTags">
         <table>
           <caption>TABLE HTML TAGS</caption>
           <thead>
@@ -200,7 +231,7 @@ const AboutHtml = () => {
           </tbody>
         </table>
       </div>
-      <div className="htmlTags">
+      <div className="htmlTags" id="formTags">
         <table>
           <caption>HTML FORM TAGS</caption>
           <thead>
@@ -237,7 +268,7 @@ const AboutHtml = () => {
           </tbody>
         </table>
       </div>
-      <div className="htmlTags">
+      <div className="htmlTags" id="lists">
         <table>
           <caption>HTML LISTS</caption>
           <thead>

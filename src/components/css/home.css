@@ -1,3 +1,4 @@
+
 .container {
   margin: 3rem auto 13rem;
   display: grid;
@@ -6,6 +7,10 @@
 .banner img {
   height: 15rem;
   border-radius: 50%;
+}
+.intro{
+  color: var(--theme);
+  z-index: 11;
 }
 .intro h1 {
   font-size: 2rem;

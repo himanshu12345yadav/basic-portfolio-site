@@ -1,8 +1,48 @@
-.heading {
-  font-size: 2rem;
+.projects-banner {
+  background-image: url(../../assets/projects-banner.jpg);
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.projects-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000080;
+}
+.projects-heading {
+  font-size: 5rem;
   text-align: center;
-  color: var(--theme);
-  font-weight: bold;
+  color: var(--white);
+  z-index: 10;
+  position: relative;
+  padding: 10px 0px;
+}
+.projects-banner-content {
+  z-index: 10;
+  color: var(--white-muted);
+  line-height: 1.5rem;
+  max-width: 50%;
+  text-align: center;
+  padding: 20px;
+}
+.projects-heading:after {
+  content: "";
+  background-color: var(--white);
+  height: 3px;
+  width: 30%;
+  left: 0;
+  bottom: 0;
+  position: absolute;
 }
 .projects {
   display: block;
@@ -13,6 +53,7 @@
   margin: 30px auto;
   width: 80%;
   border: 0px;
+  border: 1px solid var(--theme);
 }
 .projects table th,
 td,
@@ -28,14 +69,13 @@ caption {
   text-align: center;
 }
 .projects tr:nth-child(even) {
-  background-color: var(--light-white);
+  background-color: var(--striped);
 }
 .projects th {
-  color: var(--light-white);
-  background-color: var(--dark);
+  color: var(--white);
+  background-color: var(--theme);
 }
 .projects caption {
-  background-color: var(--silver-sand);
   border-bottom: 0px;
   font-size: 1.3rem;
   text-transform: capitalize;
@@ -43,9 +83,6 @@ caption {
 @media (max-width: 992px) {
   .projects table {
     width: 90%;
-  }
-  .heading {
-    font-size: 1.8rem;
   }
   .projects table,
   td,
@@ -55,9 +92,6 @@ caption {
   }
 }
 @media (max-width: 768px) {
-  .heading {
-    font-size: 1.6rem;
-  }
   .projects table {
     width: 90%;
     margin-bottom: 20vh;
@@ -68,11 +102,11 @@ caption {
   caption {
     font-size: 15px;
   }
+  .projects-banner-content {
+    max-width: 80%;
+  }
 }
 @media (max-width: 576px) {
-  .heading {
-    font-size: 1.4rem;
-  }
   .projects table {
     width: 95%;
   }
@@ -84,13 +118,6 @@ caption {
   }
 }
 @media (max-width: 365px) {
-  table th,
-  td {
-    height: 70px;
-  }
-  .heading {
-    font-size: 1.2rem;
-  }
   .projects table,
   td,
   th,
