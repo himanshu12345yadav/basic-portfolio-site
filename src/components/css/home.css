@@ -1,34 +1,64 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 .container {
-  margin: 3rem auto 13rem;
-  display: grid;
-  place-items: center;
+    margin: 3rem auto 13rem;
+    display: grid;
+    place-items: center;
+}
+.banner {
+    position: relative;
+    display: grid;
+    place-content: center;
 }
 .banner img {
-  height: 15rem;
-  border-radius: 50%;
+    height: 15rem;
+    border-radius: 50%;
 }
-.intro{
-  color: var(--theme);
-  z-index: 11;
+.banner:after {
+    content: '';
+    border-radius: 50%;
+    top: -2%;
+    bottom: -2%;
+    left: -2%;
+    right: -2%;
+    position: absolute;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #6317c7, #1ce2b4);
+    z-index: -1;
+    background-size: 400% 400%;
+    animation: border-gradient 15s ease-in-out infinite;
+}
+@keyframes border-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.intro {
+    color: var(--theme);
+    z-index: 11;
 }
 .intro h1 {
-  font-size: 2rem;
-  margin: 2rem;
-  color: var(--theme);
-  letter-spacing: 0.1rem;
-  font-family: "Lobster", cursive;
-  transform: rotateZ(-5deg);
-  text-align: center;
+    font-size: 2.5rem;
+    margin: 2rem;
+    color: var(--theme);
+    letter-spacing: 0.1rem;
+    font-family: 'Kaushan Script', cursive;
+    transform: rotateZ(-5deg);
+    text-align: center;
 }
 .intro h2 {
-  font-family: "Lobster", cursive;
-  font-size: 1.5rem;
-  color: var(--theme);
-  text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    color: var(--theme);
+    text-align: center;
 }
 @media (max-width: 780px) {
-  .image img {
-    height: 15rem;
-  }
+    .image img {
+        height: 15rem;
+    }
 }

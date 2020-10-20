@@ -12,13 +12,15 @@
   --white-hover: #ffffffd7;
   --white-muted: #ffffffb2;
   --striped: #cecece;
-  --theme: #de535f;
-  --theme-hover: #9c1d26;
+  --theme: #26457e;
+  --theme-hover: #0c2452;
   --black: #1d1d1f;
   --black-muted: #606066;
 }
 html {
   scroll-behavior: smooth;
+  min-height: 100%;
+  position: relative;
 }
 body {
   background-color: var(--content);
@@ -158,14 +160,16 @@ nav {
   color: var(--white);
   z-index: 10;
   text-align: center;
+  display: flex;
 }
 #typing-text:before {
   content: "I am a ";
+  margin-right: 10px;
   color: var(--white-muted);
 }
 #typing-text:after {
   content: "";
-  margin: 5px;
+  margin: 0px 10px;
   z-index: 5;
   border: 2px solid var(--white);
   animation: blink-Fade 0.3s ease-in infinite alternate;
@@ -192,6 +196,9 @@ iframe {
   margin: 10vh auto;
 }
 footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
   background-color: var(--black);
   font-size: 0.9rem;
@@ -200,6 +207,7 @@ footer {
   justify-content: space-between;
   padding: 7px;
   color: #eeebeb;
+  overflow: hidden;
 }
 
 #footer-statement {
