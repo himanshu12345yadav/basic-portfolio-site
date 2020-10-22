@@ -28,12 +28,12 @@
   padding: 10px 0px;
 }
 .projects-banner-content {
-  z-index: 10;
   color: var(--white-muted);
   line-height: 1.5rem;
   max-width: 50%;
   text-align: center;
   padding: 20px;
+  z-index: 10;
 }
 .projects-heading:after {
   content: "";
@@ -45,7 +45,6 @@
   position: absolute;
 }
 .projects {
-  display: block;
   text-transform: capitalize;
   margin: 10vh 0px;
 }
@@ -107,8 +106,12 @@ caption {
   }
 }
 @media (max-width: 576px) {
+  .projects-heading {
+    font-size: 3rem;
+  }
   .projects table {
     width: 95%;
+    table-layout:fixed;
   }
   .projects table,
   td,

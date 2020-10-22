@@ -37,7 +37,7 @@ const Projects = () => {
             </tr>
             <tr>
               <td>audio Fingerprinting(spectrogram)</td>
-              <td>python(pyAudio,numpy,matplotlib),fast fourier transform</td>
+              <td>python, fast fourier transform</td>
             </tr>
           </tbody>
         </table>

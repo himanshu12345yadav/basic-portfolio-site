@@ -138,4 +138,7 @@
         padding-bottom: 80px;
         line-height: 1.8rem;
     }
+    .row {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 0.8fr));
+    }
 }

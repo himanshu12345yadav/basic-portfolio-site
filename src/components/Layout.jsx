@@ -83,8 +83,8 @@ const Layout = (props) => {
       </nav>
       <div className="overlay"></div>
       <div>{props.children}</div>
-      <footer id="copyright">
-        <span>
+      <footer >
+        <span id="copyright">
         &copy; 2020 All Rights Reserved
         </span>
         <span className="youtube">

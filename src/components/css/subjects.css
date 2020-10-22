@@ -67,6 +67,9 @@ tr:nth-child(even) {
 }
 
 @media (max-width: 768px) {
+  .syllabus-banner-headline {
+    font-size: 3rem;
+  }
   table {
     width: 95%;
   }

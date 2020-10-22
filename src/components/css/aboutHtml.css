@@ -158,6 +158,10 @@ td:first-of-type {
   }
 }
 @media (max-width: 768px) {
+  .section-hero-heading {
+    text-align: center;
+    font-size: 1.8rem;
+  }
   #heading {
     font-size: 16px;
   }
@@ -176,6 +180,13 @@ td:first-of-type {
   }
 }
 @media (max-width: 576px) {
+  .section-hero-heading {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .section-hero-heading::after{
+    visibility: hidden;
+  }
   .htmlTags table {
     width: 90%;
   }

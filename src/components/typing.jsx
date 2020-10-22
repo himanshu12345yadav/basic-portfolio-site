@@ -11,6 +11,7 @@ const TypingEffect = () => {
   const text_4 = "Robotics Enthusiast";
   const text_5 = "Compositor, GFX Designer, Video Editor";
   const text = [text_1, text_2, text_3, text_4, text_5];
+  let timeouts = [];
   const typein = () => {
     if (!complete && index < text[b].length) {
       setState((prevstate) => prevstate + text[b][index]);
@@ -21,13 +22,13 @@ const TypingEffect = () => {
       j = text[b].length;
       return;
     }
-    setTimeout(typein, 10);
+    timeouts.push(setTimeout(typein, 10));
   };
 
   const typeout = () => {
     if (j > 0) {
       setState((state) => state.slice(0, --j));
-      setTimeout(typeout, 20);
+      timeouts.push(setTimeout(typeout, 20));
     } else if (j === 0) {
       setComplete(() => false);
       if (b === text.length - 1) {
@@ -40,9 +41,14 @@ const TypingEffect = () => {
   };
   useEffect(() => {
     if (!complete) {
-      setTimeout(typein, 100);
+      timeouts.push(setTimeout(typein, 100));
     } else {
-      setTimeout(typeout, 2500);
+      timeouts.push(setTimeout(typeout, 2500));
+    }
+    return () => {
+      timeouts.forEach(timeout => {
+        clearTimeout(timeout)
+      })
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [complete]);

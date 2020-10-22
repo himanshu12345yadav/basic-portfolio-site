@@ -196,9 +196,6 @@ iframe {
   margin: 10vh auto;
 }
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
   background-color: var(--black);
   font-size: 0.9rem;
@@ -224,13 +221,30 @@ footer {
   }
 }
 @media screen and (max-width: 630px) {
+  #typing-text {
+    width: 100%;
+    font-size: 1.4rem;
+    white-space: pre-wrap;
+  }
   body {
-    overflow-x: hidden;
+    overflow-x:hidden!important;
+    width: 100%;
+    height: 100%;
+  }
+  html{
+    overflow-x:hidden!important;
+    width: 100%;
+    height: 100%;
   }
   .youtube {
     display: flex;
   }
-
+  .intro h1{
+    font-size: 1.5rem!important;
+  }
+  .intro h2{
+    font-size: 1.3rem!important;
+  }
   .modal .overlay {
     position: absolute;
     height: 100vh;
@@ -251,7 +265,7 @@ footer {
     width: 50%;
   }
   .nav-links {
-    position: absolute;
+    position: fixed;
     background-color: var(--black);
     flex-direction: column;
     justify-content: flex-start;
@@ -306,12 +320,13 @@ footer {
   footer {
     justify-content: space-around;
     font-size: 0.9rem;
+    padding: 0px 10px;
   }
 }
 @media (max-width: 365px) {
   #typing-text {
-    width: 90%;
-    font-size: 1.7rem;
+    width: 100%;
+    font-size: 1rem;
     white-space: pre-wrap;
   }
   .text-container {
@@ -319,6 +334,6 @@ footer {
     overflow: hidden;
   }
   .footer {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
   }
 }
