@@ -22,16 +22,14 @@ const AboutMe = () => {
           <article className="main-content">
             <span className="main-content-heading">About Me</span>
             <span className="main-content-article">
-              Hello, I am Himanshu , currently pursuing BTECH degree in
-              Electronics and Communication Engineering. I have recently worked
-              with front end frameworks like react and vue along with nodejs and
-              firebase as backend. Apart for web Development i also do little
-              bit mobile development with flutter, firebase and some low level
-              stuff in c++ and python. Apart from this i also like to work on
+            Hello, I am Himanshu , currently pursuing a BTECH degree in
+              Electronics and Communication Engineering. I have worked on
+            React and Next JS along with Node JS , Mongodb , Express JS for backend development. I also do native Android development and some low level
+              stuff in c++ and python. Apart from development, I also like working on 
               Robotics, Embedded systems and Internet of things. I also have
               great interest in CyberSecurity, Networking and Artificial
-              Intelligence. I am also have a decent experience in GFX designing,
-              compositing and Video Editing.
+              Intelligence and a decent experience in GFX designing,
+              Compositing and Video Editing.
             </span>
           </article>
         </main>

@@ -1,8 +1,5 @@
 # Portfolio-Site
 
----
-# About
-
 This is a basic portfolio site part of a university project made in **React JS** with crisper _effects_ and **awesome design**.
 
 # Features

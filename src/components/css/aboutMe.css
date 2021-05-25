@@ -112,7 +112,16 @@
     bottom: -2%;
     right: -2%;
     z-index: -1;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #1eb0e6, #1ce2b4);
+    background: linear-gradient(
+        -45deg,
+        #225c6b,
+        #f4ab42,
+        #f0744d,
+        #cc373d,
+        #343878,
+        #2e5179,
+        #cdced0
+    );
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }

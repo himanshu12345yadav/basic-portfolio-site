@@ -5,12 +5,13 @@ var b = 0;
 const TypingEffect = () => {
   var [state, setState] = useState("");
   var [complete, setComplete] = useState(false);
-  const text_1 = "Full stack Developer";
-  const text_2 = "Enthusiastic Tech Learner";
-  const text_3 = "Self Taught Programmer";
-  const text_4 = "Robotics Enthusiast";
-  const text_5 = "Compositor, GFX Designer, Video Editor";
-  const text = [text_1, text_2, text_3, text_4, text_5];
+  const text_1 = "Full stack Web Developer";
+  const text_2 = "Android Developer";
+  const text_3 = "Enthusiastic Tech Learner";
+  const text_4 = "Self Taught Programmer";
+  const text_5 = "Robotics Enthusiast";
+  const text_6 = "Compositor, GFX Designer, Video Editor";
+  const text = [text_1, text_2, text_3, text_4, text_5 , text_6];
   let timeouts = [];
   const typein = () => {
     if (!complete && index < text[b].length) {

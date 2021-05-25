@@ -21,7 +21,16 @@
     left: -2%;
     right: -2%;
     position: absolute;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #6317c7, #1ce2b4);
+    background: linear-gradient(
+        -45deg,
+        #225c6b,
+        #f4ab42,
+        #f0744d,
+        #cc373d,
+        #343878,
+        #2e5179,
+        #cdced0
+    );
     z-index: -1;
     background-size: 400% 400%;
     animation: border-gradient 15s ease-in-out infinite;
@@ -46,12 +55,12 @@
     margin: 2rem;
     color: var(--theme);
     letter-spacing: 0.1rem;
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'Pattaya', cursive;
     transform: rotateZ(-5deg);
     text-align: center;
 }
 .intro h2 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Pattaya', cursive;
     font-size: 1.8rem;
     letter-spacing: 0.1rem;
     color: var(--theme);
